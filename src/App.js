@@ -1,25 +1,18 @@
 import './App.css';
 
 function App() {
+
+  window.onload = init;
+  function init() {
+    document.getElementById("text").innerText = "Quote 1"
+    document.getElementById("author").innerText = "Author 1"
+  }
   return (
   <div id="quote-box">
-
-    <div id="text">
-      I'm the quote
-    </div>
-
-    <div id="author">
-      I'm the actor
-    </div>
-
-    <button id="new-quote">
-      Button
-    </button>
-
-    <a id="tweet-quote">
-      Tweet
-    </a>
-    
+    <div id="text"></div>
+    <div id="author"></div>
+    <button id="new-quote">New Quote</button>
+    <a src="#" href="twitter.com/intent/tweet" id="tweet-quote"><button>Tweet Quote</button></a>
   </div>
   );
 }
