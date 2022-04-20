@@ -2,8 +2,6 @@ import './App.css';
 import twitter from './icons/twitter.png'
 import quote from './icons/quote.png'
 
-const axios = require('axios');
-
 function App() {
 
   const QUOTEBANK = [
@@ -40,10 +38,6 @@ function App() {
       author: "Charles Kettering"
     },
     {
-      quote: "From small beginnings come great things.",
-      author: null
-    },
-    {
       quote: "Learning is a treasure that will follow its owner everywhere",
       author: "Chinese proverb"
     },
@@ -67,11 +61,60 @@ function App() {
       quote: "One faces the future with ones past.",
       author: "Pearl Buck"
     },
+    {
+      quote: "My reputation grows with every failure.",
+      author: "George Shaw"
+    },
+    {
+      quote: "Good thoughts are no better than good dreams, unless they be executed.",
+      author: "Ralph Emerson"
+    },
+    {
+      quote: "Happiness does not come about only due to external circumstances; it mainly derives from inner attitudes.",
+      author: "Dalai Lama"
+    },
+    {
+      quote: "However many holy words you read, however many you speak, what good will they do you if you do not act on upon them?",
+      author: "Buddha"
+    },
+    {
+      quote: "For success, attitude is equally as important as ability.",
+      author: "Harry Banks"
+    },
+    {
+      quote: "If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.",
+      author: "Colin Powell"
+    },
+    {
+      quote: "A person who never made a mistake never tried anything new.",
+      author: "Albert Einstein"
+    },
+    {
+      quote: "Better than a thousand hollow words is one word that brings peace.",
+      author: "Buddha"
+    },
+    {
+      quote: "The possibilities are numerous once we decide to act and not react.",
+      author: "George Bernard Shaw"
+    },
+    {
+      quote: "Almost everything comes from nothing.",
+      author: "Henri Amiel"
+    },
+    {
+      quote: "Sometimes by losing a battle you find a new way to win the war.",
+      author: "Donald Trump"
+    },
+    {
+      quote: "Listen to what you know instead of what you fear.",
+      author: "Richard Bach"
+    },
   ]
 
   window.onload = init;
   function init() {
     generateQuote();
+    console.log("working")
   }
 
   function generateQuote() {
