@@ -114,13 +114,14 @@ body {
   body {
     width: 100%;
     background-image: url(./Img/phone.gif);
+    height: 100vh;
   }
 
   #quote-box {
     width: 370px;
     height: 280px;
-    border-radius: 120px;
-    top: 45%
+    border-radius: 80px;
+    top: 48%
  }
  
  .quote-container {
@@ -135,7 +136,7 @@ body {
  }
 
  #author {
-   margin-top: 25px;
+   margin-top: 28px;
    font-size: .7rem;
  }
 
