@@ -114,7 +114,6 @@ function App() {
   window.onload = init;
   function init() {
     generateQuote();
-    console.log("working")
   }
 
   function generateQuote() {
@@ -131,8 +130,8 @@ function App() {
     <div className="quote-container">
       <div id="text"></div>
       <div id="author"></div>
-      <button id="new-quote" onClick={() => generateQuote()}>New<img src={quote}/></button>
-      <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet">Share<img src={twitter}/></a>
+      <button id="new-quote" onClick={() => generateQuote()}>New<img alt="quote" src={quote}/></button>
+      <a id="tweet-quote" target="_blank" rel="noreferrer" href="twitter.com/intent/tweet">Share<img alt="twitter" src={twitter}/></a>
     </div>
     <p className='by'><a href="https://github.com/FARichieri" target="_blank">By frichieri</a></p>
   </div>
