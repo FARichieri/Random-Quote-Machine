@@ -5,6 +5,43 @@ body {
 
 #quote-box {
   position: absolute;
+  justify-content: center;
+  text-align: center;
+  width: 650px;
+  height: 400px;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+  border-radius: 50px;
+  display: inline-block;
+  display: flex;
+}
+
+#text {
+  margin-top: 25%;
+  width: 600px;
+}
+
+#author {
+  margin-top: 5%;
+  bottom: 35%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#new-quote {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;;
+}
+
+#tweet-quote {
+  position: absolute;
+  bottom: 10%;;
+  left: 10%;;
+}
+
+.quote-container {
+  height: 300px;
 }
