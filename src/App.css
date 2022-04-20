@@ -59,14 +59,14 @@ body {
 }
 
 #new-quote img {
-  height: 50px;
+  height: 40px;
   width: auto;
   margin-left: 5px;
 }
 
 #tweet-quote {
   position: absolute;
-  bottom: 10%;;
+  bottom: 10.5%;;
   left: 10%;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.607);
