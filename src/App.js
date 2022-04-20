@@ -133,7 +133,7 @@ function App() {
       <button id="new-quote" onClick={() => generateQuote()}>New<img alt="quote" src={quote}/></button>
       <a id="tweet-quote" target="_blank" rel="noreferrer" href="twitter.com/intent/tweet">Share<img alt="twitter" src={twitter}/></a>
     </div>
-    <p className='by'><a href="https://github.com/FARichieri" target="_blank">By frichieri</a></p>
+    <p className='by'><a href="https://github.com/FARichieri" target="_blank" rel="noreferrer">By frichieri</a></p>
   </div>
   );
 }
