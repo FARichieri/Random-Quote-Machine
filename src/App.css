@@ -88,7 +88,7 @@ body {
 
 .by {
   position: absolute;
-  bottom: -9%;
+  bottom: -6%;
   font-size: .8rem;
   cursor: pointer;
   text-decoration: none;
@@ -112,7 +112,7 @@ body {
 @media only screen and (max-width: 768px) {
 
   body {
-    width: 450px;
+    width: 100%;
     background-image: url(./Img/phone.gif);
   }
 
@@ -156,7 +156,7 @@ body {
   }
 
   .by {
-    bottom: -11%;
+    bottom: -7%;
   }
 
 }
