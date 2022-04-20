@@ -1,5 +1,6 @@
 import './App.css';
 import twitter from './icons/twitter.png'
+import quote from './icons/quote.png'
 
 const axios = require('axios');
 
@@ -87,9 +88,10 @@ function App() {
     <div className="quote-container">
       <div id="text"></div>
       <div id="author"></div>
-      <button id="new-quote" onClick={() => generateQuote()}>New Quote</button>
-      <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet"><img src={twitter}/></a>
+      <button id="new-quote" onClick={() => generateQuote()}>New<img src={quote}/></button>
+      <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet">Share<img src={twitter}/></a>
     </div>
+    <p className='by'><a href="https://github.com/FARichieri" target="_blank">By frichieri</a></p>
   </div>
   );
 }

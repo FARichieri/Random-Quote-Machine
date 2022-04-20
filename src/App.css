@@ -12,15 +12,20 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
-  border-radius: 50px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 10px white;
+  border-radius: 150px;
   display: inline-block;
   display: flex;
+  animation-name: appear;
+  animation-duration: 2s;
 }
 
 #text {
-  margin-top: 25%;
+  margin-top: 22%;
   width: 600px;
+  animation-name: appear;
+  animation-duration: 2s;
 }
 
 #author {
@@ -28,20 +33,126 @@ body {
   bottom: 35%;
   width: 100%;
   font-size: 1.5rem;
+  animation-name: appear;
+  animation-duration: 2s;
 }
 
 #new-quote {
   position: absolute;
   bottom: 10%;
   right: 10%;;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.607);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  animation-name: appear;
+  animation-duration: 2s;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+#new-quote:hover {
+  color: white;
+}
+
+#new-quote img {
+  height: 50px;
+  width: auto;
+  margin-left: 5px;
 }
 
 #tweet-quote {
   position: absolute;
   bottom: 10%;;
-  left: 10%;;
+  left: 10%;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.607);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  animation-name: appear;
+  animation-duration: 2s;
+  transition: .3s;
+}
+
+#tweet-quote:hover {
+  color: white
 }
 
 .quote-container {
   height: 300px;
+}
+
+.by {
+  position: absolute;
+  bottom: -9%;
+  font-size: .8rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.by a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.607);
+  transition: .3s;
+}
+
+.by a:hover {
+  color: white;
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    width: 450px;
+  }
+
+  #quote-box {
+    width: 370px;
+    height: 280px;
+    border-radius: 120px;
+ }
+ 
+ .quote-container {
+   width: 350px;
+ }
+
+ #text {
+  margin-top: 29%;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+ }
+
+ #author {
+   font-size: .7rem;
+ }
+
+ #new-quote {
+   right: 15%;
+ }
+ 
+ #new-quote img {
+   height: 30px;
+ }
+
+ #tweet-quote {
+   left: 15%;
+ }
+ 
+  #tweet-quote img {
+    height: 30px;
+  }
+
+  .by {
+    bottom: -11%;
+  }
+
 }
