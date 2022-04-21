@@ -23,19 +23,25 @@ body {
 }
 
 #text {
-  margin-top: 22%;
-  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   animation-name: appear;
   animation-duration: 2s;
 }
 
 #author {
-  margin-top: 5%;
-  bottom: 35%;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   animation-name: appear;
   animation-duration: 2s;
+  position: absolute;
+  text-shadow: 0 0 5px white;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);  
 }
 
 #new-quote {
@@ -129,14 +135,12 @@ body {
  }
 
  #text {
-  margin-top: 29%;
-  width: 100%;
+  width: 90%;
   height: 40px;
   font-size: 1rem;
  }
 
  #author {
-   margin-top: 28px;
    font-size: .7rem;
  }
 
